@@ -3,6 +3,10 @@
 *.log
 *.pyc
 *.swp
+*.bak
+*.tmp
+*~
+Thumbs.db
 .DS_Store
 .atom/
 .build/
@@ -43,3 +47,17 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Secrets & local env (keep .env.example tracked if you use one)
+.env
+.env.*
+!.env.example
+
+# Test coverage
+coverage/
+
+# Flutter Version Management (https://fvm.app)
+.fvm/
+
+# Local overrides (path deps / experiments)
+pubspec_overrides.yaml
